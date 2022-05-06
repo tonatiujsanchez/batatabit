@@ -1,0 +1,112 @@
+/* 
+    1- Posicionamiento
+    2- Modelo de Caja (Box Model)
+    3- Tipografía
+    4- Visuales
+    5- Miselaneos (Otros)
+*/
+
+:root {
+    /* Colores */
+    --bitcoin-oranje: #F7931A;
+    --soft-oranje: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    background-color: var(--off-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 32rem;
+    height: 33.4rem;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img {
+    width: 15rem;
+    height: 2.4rem;
+    margin-top: 4.2rem;
+    margin-bottom: 3.6rem;
+}
+
+.header__title-container {
+    flex-grow: 1;
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    margin-bottom: 3.6rem;
+    color: var(--just-white);
+}
+
+.header__title-container h1 {
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+
+.header__title-container p {
+    font-size: 1.4rem;
+}
+
+.header__nav {
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+}
+
+.header__button{
+    position: absolute;
+    bottom: -2.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    min-width: 23rem;
+    height: 4.8rem;
+    padding: 1.5rem 1.6rem;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--warm-black);
+
+    background-color: var(--off-white);
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.header__button span{
+    display: inline-block;
+    width: 1.3rem;
+    height: 0.8rem;
+    margin-left: 1.4rem;
+    background-image: url('./../assets/icons/down-arrow.svg');
+}
