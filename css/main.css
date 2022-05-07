@@ -125,8 +125,8 @@ main {
 
 .main-exchange-container {
     width: 100%;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 6.4rem;
+    margin-bottom: 6.4rem;
 }
 
 .main-exchange-container--image {
@@ -327,4 +327,72 @@ main {
     background-color: rgba(231, 245, 255, 1);
 }
 
-/* ===== ===== Benefits ===== ===== */
+/* ===== ===== main-product-detail ===== ===== */
+
+.main-product-detail {
+    position: relative;
+    background-color: var(--warm-black);
+    color: var(--just-white);
+    width: 100%;
+    min-width: 32rem;
+    padding: 6.4rem 1.6rem;
+}
+
+.main-product-detail--batata-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1.25rem;
+    width: 4rem;
+    height: 2.5rem;
+    background: url('./../assets/icons/batata.svg');
+
+}
+
+.main-product-detail--title {
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 2.6rem;
+    margin-bottom: 2.4rem;
+}
+
+.main-product-detail--subtitle {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #808080;
+    line-height: 1.8rem;
+    margin-bottom: 3.2rem;
+}
+
+.product-cards__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30rem);
+    justify-content: center;
+    gap: 1.6rem;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.product-detail__card {
+    padding: 1.6rem;
+    background-color: var(--black);
+    border-radius: 0.4rem;
+}
+
+.product-detail__card-image {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.product-detail__card-title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.product-detail__card-desc{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: rgba(128, 128, 128, 1);
+}
