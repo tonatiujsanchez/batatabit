@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500;700&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" 
             rel="stylesheet">
     
     <!-- styles -->
@@ -25,12 +25,92 @@
         <nav class="header__nav">
             <a href="#" class="header__button">
                 Conoce Nuestros Planes
-                <span></span>
+                <span></span>  
             </a>
         </nav>
     </header>
     <main>
-        <section></section>
+        <section class="main-exchange-container">
+            <figure class="main-exchange-container--image">
+                <img src="./assets/img/bitcoin.svg" alt="Imagen de bitcoin" title="Imagen de bitcoin">
+            </figure>
+            <div class="main-exchange-container--title">
+                <h2>Visibilizamos todas las tasas de cambio.</h2>
+                <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+            </div>
+            <section class="main-exchange-container--table">
+                    <div class="sliders-table">
+                        <div class="sliders-table__slider">
+                            <div class="main-currency-table">
+                                <h3 class="main-currency-table--title">Monedas</h3>
+                                <div class="currency-table-container">
+                                    <table>
+                                        <tr>
+                                            <td class="table__top-let">Bitcoin</td>
+                                            <td class="table__top-right table__right">$ 1.96 <span class="down"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ethereum</td>
+                                            <td class="table__right">$ 0.07 <span class="up"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ripple</td>
+                                            <td class="table__right">$ 2.15 <span class="down"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table__bottom-left">Stellar</td>
+                                            <td class="table__bottom-right table__right">$ 4.96 <span class="down"></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="currency-table-date">
+                                    <p><span>Actualizado:</span> 19 Julio 23:45</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliders-table__slider">
+                            <div class="main-currency-table commissions">
+                                <h3 class="main-currency-table--title">Comisiones</h3>
+                                <div class="currency-table-container">
+                                    <table>
+                                        <tr>
+                                            <td class="table__top-let">Bitrade</td>
+                                            <td class="table__top-right table__right">$ 12.96</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bitpreco</td>
+                                            <td class="table__right">$ 13.07</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Novadax</td>
+                                            <td class="table__right">$ 13.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table__bottom-left">Coinext</td>
+                                            <td class="table__bottom-right table__right">$ 14.96</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="currency-table-date">
+                                    <p><span>Actualizado:</span> 19 Julio 23:48</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-controls__btn slider-controls_prev" onclick="previusTable()">
+                            <svg id="SvgjsSvg1001" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1002"></defs><g id="SvgjsG1008" transform="matrix(1,0,0,1,0,0)"><svg xmlns="http://www.w3.org/2000/svg"  enable-background="new 0 0 32 32" viewBox="0 0 32 32"><path d="M23.715,15.364L9.848,2.298C9.446,1.921,8.772,1.899,8.34,2.249C7.909,2.6,7.884,3.19,8.285,3.568L21.478,16L8.285,28.432
+                                c-0.4,0.378-0.375,0.969,0.056,1.319C8.546,29.917,8.807,30,9.066,30c0.286,0,0.571-0.1,0.782-0.298l13.867-13.066
+                                C24.095,16.277,24.095,15.723,23.715,15.364z" fill="#201E1C" class="color000 svgShape"></path></svg></g></svg>
+                        </button>
+                        <button class="slider-controls__btn slider-controls_next" onclick="nextTable()">
+                            <svg id="SvgjsSvg1001" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1002"></defs><g id="SvgjsG1008" transform="matrix(1,0,0,1,0,0)"><svg xmlns="http://www.w3.org/2000/svg"  enable-background="new 0 0 32 32" viewBox="0 0 32 32"><path d="M23.715,15.364L9.848,2.298C9.446,1.921,8.772,1.899,8.34,2.249C7.909,2.6,7.884,3.19,8.285,3.568L21.478,16L8.285,28.432
+                                c-0.4,0.378-0.375,0.969,0.056,1.319C8.546,29.917,8.807,30,9.066,30c0.286,0,0.571-0.1,0.782-0.298l13.867-13.066
+                                C24.095,16.277,24.095,15.723,23.715,15.364z" fill="#201E1C" class="color000 svgShape"></path></svg></g></svg>
+                        </button>
+                    </div>
+                </section>
+        </section>
         <section></section>
         <section></section>
         <section></section>
@@ -38,5 +118,6 @@
     <footer>
         
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
