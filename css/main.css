@@ -424,6 +424,7 @@ main {
     line-height: 2.6rem;
     color: var(--just-white);
     text-align: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 
@@ -527,58 +528,54 @@ main {
 }
 
 .plan-content--description {
+    min-height: 4rem;
+    margin-bottom: 1.6rem;
+    font-weight: normal;
     font-family: 'Inter' sans-serif;
     font-size: 1.2rem;
     line-height: 1.5rem;
-    font-weight: normal;
     color: #757575;
-    margin-bottom: 1.6rem;
 }
 
 .plan-content--button {
     display: flex;
     align-items: center;
-    padding: 1.5rem 1.6rem;
+    padding: 1.3rem 1.6rem;
     font-size: 1.4rem;
     font-weight: 700;
     margin: 0 auto;
     border: 2px solid var(--bitcoin-oranje);
     border-radius: 0.4rem;
     background-color: #FAF8F7;
+    cursor: pointer;
 }
 
 .plan-content--button span {
     margin-left: 1rem;
 }
 
-/* Gradients */
-.gradients-container {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 0;
-    width: 100%;
-    height: 100%;
+.plan-content--button:active {
+    transform: scale(0.98);
 }
-.gradients-container .gradient-left {
+
+/* Gradients */
+.gradient-left {
+    position: absolute;
+    left: 0;
+    top: 0;
     height: 100%;
     width: 5rem;
     background: linear-gradient(to right, var(--off-white) 60%, transparent);
 }
-.gradients-container .gradient-right { 
+.gradient-right { 
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 5rem;
     height: 100%;
     background: linear-gradient(to left, var(--off-white) 60%, transparent);
 }
 /* controls */
-.main-plans__controls-slider {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
 
 .main-plans__controls-btn {
     border: none;
@@ -587,10 +584,22 @@ main {
 }
 
 .main-plans__controls-prev {
-    transform: scaleX(-1);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     margin-left: 2rem;    
 }
+
+.main-plans__controls-prev svg {
+    transform: scaleX(-1);
+}
+
 .main-plans__controls-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     margin-left: auto;
     margin-right: 2rem;    
 }

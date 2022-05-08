@@ -1,0 +1,44 @@
+/* Header */
+header img { 
+    margin-top: 7rem;
+}
+
+/* Slider Tables */
+.main-exchange-container--table {
+    overflow: auto;
+    max-width: 75rem;
+}
+
+.sliders-table {
+    justify-content: center;
+}
+
+.sliders-table__slider {
+    min-width: auto;
+}
+.slider-controls {
+    display: none;
+}
+
+/* bitcoin-img-container */
+.bitcoin-img-container h2 {
+    padding-top: 9rem;
+    font-size: 4rem;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+/* Slider Plans */
+.plans-container {
+    max-width: 75rem;
+}
+
+.gradient-left,
+.gradient-right {
+    display: none;
+}
+
+.main-plans__controls-prev,
+.main-plans__controls-next {
+    display: none;
+}
+
