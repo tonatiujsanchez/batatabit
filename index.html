@@ -99,12 +99,12 @@
                         </div>
                     </div>
                     <div class="slider-controls">
-                        <button class="slider-controls__btn slider-controls_prev" onclick="previusTable()">
+                        <button class="slider-controls__btn slider-controls_prev" onclick="previusTable()" name="Ver tabla anterior">
                             <svg id="SvgjsSvg1001" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1002"></defs><g id="SvgjsG1008" transform="matrix(1,0,0,1,0,0)"><svg xmlns="http://www.w3.org/2000/svg"  enable-background="new 0 0 32 32" viewBox="0 0 32 32"><path d="M23.715,15.364L9.848,2.298C9.446,1.921,8.772,1.899,8.34,2.249C7.909,2.6,7.884,3.19,8.285,3.568L21.478,16L8.285,28.432
                                 c-0.4,0.378-0.375,0.969,0.056,1.319C8.546,29.917,8.807,30,9.066,30c0.286,0,0.571-0.1,0.782-0.298l13.867-13.066
                                 C24.095,16.277,24.095,15.723,23.715,15.364z" fill="#201E1C" class="color000 svgShape"></path></svg></g></svg>
                         </button>
-                        <button class="slider-controls__btn slider-controls_next" onclick="nextTable()">
+                        <button class="slider-controls__btn slider-controls_next" onclick="nextTable()" name="Ver siguiente tabla">
                             <svg id="SvgjsSvg1001" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1002"></defs><g id="SvgjsG1008" transform="matrix(1,0,0,1,0,0)"><svg xmlns="http://www.w3.org/2000/svg"  enable-background="new 0 0 32 32" viewBox="0 0 32 32"><path d="M23.715,15.364L9.848,2.298C9.446,1.921,8.772,1.899,8.34,2.249C7.909,2.6,7.884,3.19,8.285,3.568L21.478,16L8.285,28.432
                                 c-0.4,0.378-0.375,0.969,0.056,1.319C8.546,29.917,8.807,30,9.066,30c0.286,0,0.571-0.1,0.782-0.298l13.867-13.066
                                 C24.095,16.277,24.095,15.723,23.715,15.364z" fill="#201E1C" class="color000 svgShape"></path></svg></g></svg>
@@ -154,14 +154,20 @@
                         <h3 class="plan-content--title">Pagon Anual</h3>
                         <p class="plan-content--price"><span>$</span>19</p>
                         <p class="plan-content--description">Paga 1 vez al mes desde el día de tu compra.</p>
-                        <button class="plan-content--button">Escoger este <span><img src="./assets/icons/orange-right-arrow.svg" alt=""></span></button>
+                        <button class="plan-content--button" name="Elegir este plan">
+                            Escoger este 
+                            <span><img src="./assets/icons/orange-right-arrow.svg" alt=""></span>
+                        </button>
                     </article>
                     <article class="plan-content--slide">
                         <span class="plan-content--recommended">Recomendado</span>
                         <h3 class="plan-content--title">Pagon Anual</h3>
                         <p class="plan-content--price"><span>$</span>99</p>
                         <p class="plan-content--description">*Ahorras $129 comparado al plan mensual.</p>
-                        <button class="plan-content--button">Escoger este <span><img src="./assets/icons/orange-right-arrow.svg" alt=""></span></button>
+                        <button class="plan-content--button" name="Elegir este plan">
+                            Escoger este 
+                            <span><img src="./assets/icons/orange-right-arrow.svg" alt=""></span>
+                        </button>
                     </article>
                     <article class="plan-content--slide">
                         <!-- <span class="plan-content--recommended">Recomendado</span> -->
@@ -169,18 +175,21 @@
                         <p class="plan-content--price"><span>$</span>129</p>
                         <p class="plan-content--description">Ahorro infinito
                             (50 cupos).</p>
-                        <button class="plan-content--button">Escoger este <span><img src="./assets/icons/orange-right-arrow.svg" alt=""></span></button>
+                        <button class="plan-content--button" name="Elegir este plan">
+                            Escoger este 
+                            <span><img src="./assets/icons/orange-right-arrow.svg" alt=""></span>
+                        </button>
                     </article>
                 </div>
    
                 <div class="gradient-left"></div>
                 <div class="gradient-right"></div>
-                <button class="slider-controls__btn main-plans__controls-prev" onclick="previusPrice()">
+                <button class="slider-controls__btn main-plans__controls-prev" onclick="previusPrice()" name="Ver plan anterior">
                     <svg id="SvgjsSvg1001" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1002"></defs><g id="SvgjsG1008" transform="matrix(1,0,0,1,0,0)"><svg xmlns="http://www.w3.org/2000/svg"  enable-background="new 0 0 32 32" viewBox="0 0 32 32"><path d="M23.715,15.364L9.848,2.298C9.446,1.921,8.772,1.899,8.34,2.249C7.909,2.6,7.884,3.19,8.285,3.568L21.478,16L8.285,28.432
                         c-0.4,0.378-0.375,0.969,0.056,1.319C8.546,29.917,8.807,30,9.066,30c0.286,0,0.571-0.1,0.782-0.298l13.867-13.066
                         C24.095,16.277,24.095,15.723,23.715,15.364z" fill="#201E1C" class="color000 svgShape"></path></svg></g></svg>
                 </button>
-                <button class="slider-controls__btn main-plans__controls-next" onclick="nextPrice()">
+                <button class="slider-controls__btn main-plans__controls-next" onclick="nextPrice()" name="Ver siguente plan">
                     <svg id="SvgjsSvg1001" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1002"></defs><g id="SvgjsG1008" transform="matrix(1,0,0,1,0,0)"><svg xmlns="http://www.w3.org/2000/svg"  enable-background="new 0 0 32 32" viewBox="0 0 32 32"><path d="M23.715,15.364L9.848,2.298C9.446,1.921,8.772,1.899,8.34,2.249C7.909,2.6,7.884,3.19,8.285,3.568L21.478,16L8.285,28.432
                         c-0.4,0.378-0.375,0.969,0.056,1.319C8.546,29.917,8.807,30,9.066,30c0.286,0,0.571-0.1,0.782-0.298l13.867-13.066
                         C24.095,16.277,24.095,15.723,23.715,15.364z" fill="#201E1C" class="color000 svgShape"></path></svg></g></svg>
